@@ -1,0 +1,590 @@
+openapi: 3.0.0
+info:
+  title: JAMII_MATERNITY_HOSPITAL
+  version: 1.0.0
+servers:
+  - url: https://jamii-maternity-hospital.vercel.app
+components:
+  securitySchemes:
+    noauthAuth:
+      type: http
+      scheme: noauth
+    apikeyAuth:
+      type: http
+      scheme: apikey
+tags:
+  - name: Users
+  - name: Users > ClientList
+  - name: Users > ClientList > Transfer
+  - name: Hash
+  - name: Hospital Client
+  - name: Surfer Messages
+  - name: Search
+  - name: Captcha
+paths:
+  /api/users/Djy4dVggihWkzaEMTY9g/clientlist/F7g3EoLlSbDV0jvcLYvH/transfer:
+    post:
+      tags:
+        - Users > ClientList > Transfer
+      summary: Transfer One Item from Midwife's ClientList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                receivingMidwifeId: HqAKjmcslER0eQGmP7sb
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/oSPARVJR8RYnvz1ns9Sd/clientlist:
+    post:
+      tags:
+        - Users > ClientList
+      summary: Add To User ClientList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                assignmentRef: MfiP1KZHzQxhAN4nAcwI
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/eA0we4sicId9LiNo5peM/clientlist/I5FJTYKFqIHnFN3jQ5GJ:
+    put:
+      tags:
+        - Users > ClientList
+      summary: Update One Item from User ClientList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                disabled: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/Djy4dVggihWkzaEMTY9g/clientlist/uXEwjqcpIqCtVFb1BIDz:
+    get:
+      tags:
+        - Users > ClientList
+      summary: Get One Item from User ClientList
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/oSPARVJR8RYnvz1ns9Sd/clientlist/bjwnmpwvyYhs6uOTBvn2:
+    delete:
+      tags:
+        - Users > ClientList
+      summary: Delete One Item from User ClientList
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/CXLpCvOYg1uDXiHhWIAH/clientlist:
+    get:
+      tags:
+        - Users > ClientList
+      summary: Get All Items from User ClientList
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/Djy4dVggihWkzaEMTY9g/clientlist:
+    get:
+      tags:
+        - Users > ClientList
+      summary: Get All Items from User ClientList Copy
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/signup:
+    post:
+      tags:
+        - Users
+      summary: Signup
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: user@example.com
+                password: User*$1234
+                firstName: User
+                lastName: X
+                avatar: null
+      parameters:
+        - name: skipKlaims
+          in: query
+          schema:
+            type: boolean
+          example: 'false'
+        - name: skipFirebaseAuth
+          in: query
+          schema:
+            type: boolean
+          example: 'false'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/logdeletedprofile:
+    post:
+      tags:
+        - Users
+      summary: A/c Deletion
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: user@example.com
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/signin:
+    post:
+      tags:
+        - Users
+      summary: Signin
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: user@example.com
+                password: User*$1234
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/cookie:
+    post:
+      tags:
+        - Users
+      summary: Cookie
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: user@example.com
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/email:
+    post:
+      tags:
+        - Users
+      summary: ✅ Email Info
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: user@example.com
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users:
+    get:
+      tags:
+        - Users
+      summary: ✅ Get All Users [role Midwives]
+      security:
+        - apikeyAuth: []
+      parameters:
+        - name: midwives
+          in: query
+          schema:
+            type: boolean
+          example: 'true'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/Djy4dVggihWkzaEMTY9g:
+    get:
+      tags:
+        - Users
+      summary: ✅ Get One User
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/XR4YeUqsqpIUwHkYxatM:
+    put:
+      tags:
+        - Users
+      summary: ✅ Update User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                roleId: '2'
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/updatefield_profileavatarbase64:
+    put:
+      tags:
+        - Users
+      summary: 🫥 Update Field - Avatar (Base64)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                file: data:text/plain;base64,xxx
+                userId: userId
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/updatefield_profileavatar:
+    put:
+      tags:
+        - Users
+      summary: 🫥 Update Field - Avatar
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                avatar: https://avatar.url
+                userId: gMoQFAmEDhL6kbexAhCc
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/eA0we4sicId9LiNo5peM:
+    delete:
+      tags:
+        - Users
+      summary: ✅ Delete User
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/logout:
+    delete:
+      tags:
+        - Users
+      summary: ✅ Logout
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/hash:
+    get:
+      tags:
+        - Hash
+      summary: Generate Hash
+      security:
+        - noauthAuth: []
+      parameters:
+        - name: input
+          in: query
+          schema:
+            type: string
+          example: xxx
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/hash/validate:
+    get:
+      tags:
+        - Hash
+      summary: Validate Input Against Hash
+      security:
+        - noauthAuth: []
+      parameters:
+        - name: input
+          in: query
+          schema:
+            type: string
+          example: xxx
+        - name: hash
+          in: query
+          schema:
+            type: string
+          example: $2b$10$EkjIkxB4rctUorZ99a1Abe.JvO4D7tcRmr7gmci2w0BC4IXzxwS0K
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients:
+    post:
+      tags:
+        - Hospital Client
+      summary: ✅ Create Hospital Client
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                clientEmail: mam.toto@musk.io
+                hospitalizationDays: 60
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    get:
+      tags:
+        - Hospital Client
+      summary: ✅ Get All Hospital Clients (FB)
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients/OHebl7K8OR3PH0thQCQz:
+    put:
+      tags:
+        - Hospital Client
+      summary: ✅ Update Hospital Client
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                discharged: false
+                handlerMedicId: ''
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients/gqOC0rRLtgGNRcMs9a9T:
+    delete:
+      tags:
+        - Hospital Client
+      summary: ✅ Delete One Hospital Client
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients/xwGknwC0kGUHnpZ9sLnv:
+    get:
+      tags:
+        - Hospital Client
+      summary: ✅ Get One Hospital Client
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/surfermessages:
+    post:
+      tags:
+        - Surfer Messages
+      summary: ✅ Create Surfermessage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                firstName: Last
+                lastName: Sicko
+                email: last.sicko@gmail.com
+                surferMessage: Healed, come for a treat nurse User...
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    get:
+      tags:
+        - Surfer Messages
+      summary: ✅ Get All Surfermessage (FB)
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/surfermessages/OuYo7eIMWWkCJXow3Vhk:
+    put:
+      tags:
+        - Surfer Messages
+      summary: ✅ Update Surfermessage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                surferMessage: ...Or not!
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - Surfer Messages
+      summary: ✅ Delete One Surfermessage
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/updatefield_surfermessagestatus:
+    put:
+      tags:
+        - Surfer Messages
+      summary: 🫥 Update Field - Status
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                surferMessageId: mSujyZGaLt5L6BtQ5p1z
+                status: READ
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/surfermessages/068yIYxFAayscn1ks9D4:
+    get:
+      tags:
+        - Surfer Messages
+      summary: ✅ Get One Surfermessage
+      security:
+        - apikeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/search:
+    post:
+      tags:
+        - Search
+      summary: Search
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                q: term
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/verifycaptcha:
+    get:
+      tags:
+        - Captcha
+      summary: Verify Captcha
+      parameters:
+        - name: secret
+          in: query
+          schema:
+            type: string
+          example: xxx=
+        - name: token
+          in: query
+          schema:
+            type: string
+          example: xxx=
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

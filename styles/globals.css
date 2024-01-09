@@ -1,0 +1,890 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-btn {
+    @apply duo p-2 px-4 py-2.5 my-2 border border-zinc-700 sm:px-6 text-xs sm:text-sm bg-zinc-900 dark:bg-zinc-700 hover:bg-blue-700 rounded text-white focus:ring-4 focus:outline-none focus:ring-slate-600 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+}
+
+@layer components {
+  .my-btn-hot {
+    @apply my-btn hover:bg-red-600;
+  }
+}
+
+@layer components {
+  .my-select {
+    @apply bg-zinc-50 pr-2 my-2 border border-zinc-700 text-zinc-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:dark:bg-zinc-300 dark:border-zinc-600 dark:placeholder-zinc-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+}
+
+@layer components {
+  .my-link-nav {
+    @apply text-zinc-900 dark:text-zinc-500 hover:text-blue-700 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-nav-yellow {
+    @apply my-link-nav hover:text-yellow-600;
+  }
+}
+
+@layer components {
+  .my-link-add {
+    @apply text-slate-100 dark:text-slate-800 hover:text-yellow-600  dark:hover:text-yellow-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-add-darker {
+    @apply my-link-add text-slate-200 dark:text-slate-700;
+  }
+}
+
+@layer components {
+  .my-link-chevron {
+    @apply select-none inline-block mb-2 my-link uppercase nunito font-thin text-2xl text-slate-400 dark:text-zinc-700;
+  }
+}
+
+@layer components {
+  .my-link-modal {
+    @apply text-zinc-600 hover:text-slate-200;
+  }
+}
+
+@layer components {
+  .my-link-nav-bold {
+    @apply my-link-nav sweet-bold;
+  }
+}
+
+@layer components {
+  .my-link-nav-green {
+    @apply my-link-nav hover:text-green-600;
+  }
+}
+
+@layer components {
+  .my-link-nav-yellow {
+    @apply my-link-nav hover:text-yellow-600;
+  }
+}
+
+@layer components {
+  .my-link-nav-error {
+    @apply my-link-nav hover:text-red-600;
+  }
+}
+
+@layer components {
+  .my-link {
+    @apply duo text-zinc-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-input {
+    @apply dark:bg-zinc-300 border-zinc-300 dark:border-zinc-700;
+  }
+}
+
+@layer components {
+  .teaser-link {
+    @apply my-link;
+  }
+}
+
+@layer components {
+  .dotted {
+    @apply underline decoration-dotted hover:decoration-transparent;
+  }
+}
+
+@layer components {
+  .my-link-dotted {
+    @apply my-link dotted decoration-zinc-300 dark:decoration-zinc-700;
+  }
+}
+
+@layer components {
+  .my-link-tooltip {
+    @apply my-link dotted decoration-zinc-300 dark:decoration-zinc-300;
+  }
+}
+
+@layer components {
+  .my-link-cursor {
+    @apply my-link  cursor-text;
+  }
+}
+
+@layer components {
+  .my-link-dotted-cursor {
+    @apply my-link-dotted cursor-text;
+  }
+}
+
+@layer components {
+  .my-link-underline {
+    @apply my-link hover:underline;
+  }
+}
+
+@layer components {
+  .tooltip-header {
+    @apply text-lg sm:text-xl text-yellow-600;
+  }
+}
+
+@layer components {
+  .tooltip-header-link {
+    @apply tooltip-header  text-yellow-600 hover:underline  hover:text-zinc-500 cursor-pointer;
+  }
+}
+
+@layer components {
+  .tooltip-header-teaser {
+    @apply tooltip-header  text-yellow-600 hover:text-zinc-500 cursor-text;
+  }
+}
+
+@layer components {
+  .sub-header {
+    @apply sweet-bold text-lg sm:text-xl;
+  }
+}
+
+@layer components {
+  .cite-header {
+    @apply text-sm sweet-bold mb-1;
+  }
+}
+
+@layer components {
+  .tooltip-link {
+    @apply my-link-tooltip;
+  }
+}
+
+@layer components {
+  .tooltip-link-bold {
+    @apply my-link-dotted sweet-bold;
+  }
+}
+
+@layer components {
+  .tooltip-link-attribution {
+    @apply tooltip-link hover:text-red-600;
+  }
+}
+
+@layer components {
+  .my-link-silent {
+    @apply my-link hover:underline  hover:text-zinc-500 dark:text-zinc-600;
+  }
+}
+
+@layer components {
+  .my-link-faded {
+    @apply my-link text-slate-400 dark:text-zinc-600 hover:underline  hover:text-blue-600;
+  }
+}
+
+@layer components {
+  .my-link-error {
+    @apply hover:text-red-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .delicate {
+    @apply hover:text-yellow-600 decoration-zinc-300 dark:decoration-zinc-700 cursor-text;
+  }
+}
+
+@layer components {
+  .my-link-delicate {
+    @apply hover:text-yellow-600 hover:underline  decoration-zinc-300 dark:decoration-zinc-700 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-faded-yellow {
+    @apply my-link-faded hover:text-yellow-600;
+  }
+}
+
+@layer components {
+  .leading-li {
+    @apply text-blue-600 dark:text-slate-100;
+  }
+}
+
+@layer components {
+  .my-page {
+    @apply flex flex-col gap-y-5 w-80 sm:w-128 my-text pb-16;
+  }
+}
+
+@layer components {
+  .my-page-full {
+    @apply my-page sm:w-160;
+  }
+}
+
+@layer components {
+  .my-page-extension {
+    @apply my-page w-96 sm:w-96 px-5 border pl-2 my-0 border-transparent rounded;
+  }
+}
+
+@layer components {
+  .my-text {
+    @apply duo text-zinc-900 dark:text-zinc-500 text-xs sm:text-sm;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast {
+    @apply duo text-zinc-900 dark:text-white text-xs sm:text-sm;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast-lg {
+    @apply my-text-high-contrast text-xl sm:text-2xl;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast-xl {
+    @apply my-text-high-contrast text-4xl sm:text-5xl;
+  }
+}
+
+@layer components {
+  .my-page-title {
+    @apply duo-medium leading-tight text-2xl sm:text-4xl mt-0 mb-2 text-blue-600;
+  }
+}
+
+@layer components {
+  .my-page-title-lg {
+    @apply my-page-title text-4xl sm:text-5xl;
+  }
+}
+
+@layer components {
+  .my-logo-title {
+    @apply my-page-title text-zinc-900;
+  }
+}
+
+@layer components {
+  .my-sub-title {
+    @apply text-zinc-600 dark:text-white duo-medium text-sm sm:text-lg;
+  }
+}
+
+@layer components {
+  .my-sub-title-faded {
+    @apply my-sub-title text-slate-400 dark:text-white;
+  }
+}
+
+@layer components {
+  .my-link-hot {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-red-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-high-contrast {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-slate-500 dark:hover:text-zinc-50;
+  }
+}
+
+@layer components {
+  .yello {
+    @apply text-yellow-500 dark:text-yellow-700;
+  }
+}
+
+@layer components {
+  .my-loading {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-slate-500 dark:hover:text-zinc-50 sweet-bold my-2;
+  }
+}
+
+@layer components {
+  .my-rule {
+    @apply border-t-zinc-200 dark:border-t-zinc-700;
+  }
+}
+
+@layer components {
+  .my-rule-yellow {
+    @apply border-t-yellow-600 dark:border-t-yellow-600;
+  }
+}
+
+@layer components {
+  .my-rule-pricing {
+    @apply border-t-zinc-100 dark:border-t-zinc-600;
+  }
+}
+
+@layer components {
+  .my-bar {
+    @apply border-t-zinc-300 dark:border-t-zinc-500 w-8 border-t-4;
+  }
+}
+
+@layer components {
+  .my-bar-error {
+    @apply my-bar border-t-red-600 dark:border-t-red-600;
+  }
+}
+
+@layer components {
+  .my-bar-yellow {
+    @apply my-bar border-t-yellow-600 dark:border-t-yellow-600;
+  }
+}
+
+@layer components {
+  .my-bar-blue {
+    @apply my-bar border-t-blue-600 dark:border-t-blue-600;
+  }
+}
+
+@layer components {
+  .my-rule-bottom {
+    @apply border border-x-0 border-t-0 border-b-zinc-200 dark:border-b-zinc-700;
+  }
+}
+
+@layer components {
+  .my-vrule {
+    @apply my-page-title border-r-2 pl-2 pr-2 border-zinc-200 dark:border-zinc-700;
+  }
+}
+
+@layer components {
+  .my-vrule-text {
+    @apply sm:text-lg text-sm pl-2 pb-2 pt-2;
+  }
+}
+
+@layer components {
+  .my-border {
+    @apply border border-zinc-100 dark:border-zinc-600;
+  }
+}
+
+@layer components {
+  .my-popsicle {
+    @apply select-none inline-block bg-zinc-200 dark:bg-zinc-600 rounded-full px-3 py-1 text-xs font-semibold text-zinc-700 dark:text-zinc-900 mr-1 mb-2 ubuntu-mono;
+  }
+}
+
+@layer components {
+  .my-popsicle-hover {
+    @apply bg-zinc-200 dark:bg-zinc-600 cursor-pointer opacity-75;
+  }
+}
+
+@layer components {
+  .my-popsicle-first {
+    @apply my-popsicle mr-1;
+  }
+}
+
+@layer components {
+  .my-popsicle-free {
+    @apply bg-slate-600 dark:bg-slate-600 rounded-md px-1 py-1 ubuntu-mono text-xs text-slate-800 dark:text-slate-800;
+  }
+}
+
+@layer components {
+  .my-popsicle-plus {
+    @apply my-popsicle-free;
+  }
+}
+
+@layer components {
+  .my-popsicle-iso2code {
+    @apply my-popsicle bg-zinc-300 hover:bg-zinc-200 cursor-text py-1 px-2 m-0;
+  }
+}
+
+@layer components {
+  .my-popsicle-button {
+    @apply my-popsicle bg-zinc-300 hover:bg-zinc-200 cursor-text py-1 px-2 m-0;
+  }
+}
+
+@layer components {
+  .footer-title {
+    @apply duo-medium text-lg text-slate-700 hover:text-slate-600 hover:dark:text-slate-500 cursor-text;
+  }
+}
+
+@layer components {
+  .footer-resposta {
+    @apply footer-title ubuntu-mono text-xs;
+  }
+}
+
+@layer components {
+  .my-popsicle-link {
+    @apply hover:text-blue-600 dark:hover:text-slate-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down {
+    @apply text-blue-600 dark:text-slate-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down-hotpink {
+    @apply text-red-400;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down-green {
+    @apply text-green-600;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-hot {
+    @apply hover:text-blue-600 dark:hover:text-red-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-hot-down {
+    @apply text-blue-600 dark:text-red-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-variant {
+    @apply dark:text-slate-400 hover:text-blue-600 dark:hover:text-slate-200;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-search {
+    @apply my-popsicle my-popsicle-link-variant cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-card {
+    @apply px-6 pt-4  pb-2 mb-5 bg-gradient-to-r from-slate-100  to-slate-100  dark:from-slate-800  dark:to-slate-800 shadow-sm rounded-tl-md rounded-tr-md rounded-bl-md rounded-br-md;
+  }
+}
+
+@layer components {
+  .my-card-hover-highlight {
+    @apply my-card hover:from-slate-200  hover:to-slate-200  hover:dark:from-slate-700  hover:dark:to-slate-700;
+  }
+}
+
+@layer components {
+  .my-card-darker {
+    @apply my-card from-slate-200  to-slate-200  dark:from-slate-800  dark:to-slate-800;
+  }
+}
+
+@layer components {
+  .my-card-title {
+    @apply sm:text-2xl text-xl text-slate-400 dark:text-slate-600 nunito font-extralight;
+  }
+}
+
+@layer components {
+  .my-card-pricing {
+    @apply px-6 pt-4  pb-2 mb-5 bg-gradient-to-r from-white  to-white  dark:from-slate-800  dark:to-slate-800 shadow-sm rounded-md  border border-zinc-200 dark:border-zinc-800 sm:w-80;
+  }
+}
+
+@layer components {
+  .my-card-embedded {
+    @apply px-6 pt-4  pb-2 mb-5 bg-gradient-to-r from-white  to-white dark:from-slate-800  dark:to-slate-800 shadow-sm rounded-md  border border-zinc-300 dark:border-zinc-700 sm:w-80;
+  }
+}
+
+@layer components {
+  .my-card-affiliates {
+    @apply bg-gradient-to-r from-slate-100  to-slate-100  dark:from-slate-800  dark:to-slate-800  pt-2 pb-6 px-2 rounded-md  mb-4;
+  }
+}
+
+@layer components {
+  .nil {
+    @apply text-slate-400 dark:text-zinc-700 hover:text-red-600 text-xs sm:text-xs;
+  }
+}
+
+@layer components {
+  .text-danger {
+    @apply text-red-600 hover:text-zinc-700 text-xs sm:text-xs text-left pl-3;
+  }
+}
+
+@layer components {
+  .cite {
+    @apply text-slate-400 dark:text-zinc-700 hover:text-red-600 text-xs sm:text-xs uppercase font-extralight;
+  }
+}
+
+@layer components {
+  .cite-spacer {
+    @apply pt-8;
+  }
+}
+
+@layer components {
+  .cite-spacer-half {
+    @apply pt-4;
+  }
+}
+
+@layer components {
+  .faded-link {
+    @apply cite dark:text-slate-400;
+  }
+}
+
+@layer components {
+  .resposta {
+    @apply my-link cursor-text sweet-bold ubuntu-mono font-extrabold text-xs text-blue-600;
+  }
+}
+
+@layer components {
+  .resposta-silent {
+    @apply resposta hover:text-zinc-500;
+  }
+}
+
+@layer components {
+  .resposta-silent-faded {
+    @apply resposta text-slate-400 hover:text-slate-400;
+  }
+}
+
+@layer components {
+  .sweet-bold {
+    @apply duo-medium;
+  }
+}
+
+@layer components {
+  .sweet-bolder {
+    @apply duo-medium sweet-bold;
+  }
+}
+
+@layer components {
+  .yello {
+    color: yellow;
+  }
+}
+
+@layer components {
+  .reading-titles {
+    @apply hover:text-blue-700 dark:hover:text-blue-700;
+  }
+}
+
+@layer components {
+  .reading-titles-error {
+    @apply hover:text-red-700 dark:hover:text-red-700;
+  }
+}
+
+@layer components {
+  .reading-notes {
+    @apply hover:text-yellow-600 dark:hover:text-zinc-100;
+  }
+}
+
+@layer components {
+  .reading-notes-error {
+    @apply hover:text-red-700 dark:hover:text-red-700;
+  }
+}
+
+@layer components {
+  .reading-chat {
+    @apply hover:text-yellow-600 dark:hover:text-zinc-100;
+  }
+}
+
+@layer components {
+  .footer-style {
+    @apply bg-gray-900 dark:bg-gray-800 text-slate-700 dark:text-slate-600;
+  }
+}
+
+@layer components {
+  .ol-number {
+    @apply ubuntu-mono mr-2 text-blue-600 dark:text-zinc-50;
+  }
+}
+
+@layer components {
+  .ol-number-error {
+    @apply ol-number text-red-600;
+  }
+}
+
+@layer components {
+  .pop-out {
+    @apply text-slate-400 hover:text-red-600 dark:hover:text-zinc-100;
+  }
+}
+
+.duo {
+  font-family: 'blood-donor';
+}
+
+.duo-medium {
+  font-family: 'blood-donor';
+  font-weight: 200;
+}
+
+.nunito {
+  font-family: 'blood-donor';
+}
+
+@font-face {
+  font-family: 'font-old-stamper';
+  src: url('/fonts/old-stamper.ttf');
+}
+
+.old-stamper {
+  font-family: 'font-old-stamper';
+}
+
+@font-face {
+  font-family: 'font-top-secret-stamper';
+  src: url('/fonts/top-secret-stamper.ttf');
+}
+
+.top-secret-stamper {
+  font-family: 'font-top-secret-stamper';
+}
+
+@font-face {
+  font-family: 'ticking-time';
+  src: url('/fonts/ticking-time.ttf');
+}
+
+.ticking-time {
+  font-family: 'ticking-time';
+}
+
+@font-face {
+  font-family: 'blood-donor';
+  src: url('/fonts/blood-donor.ttf');
+}
+
+.blood-donor {
+  font-family: 'blood-donor';
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/montserrat.ttf');
+}
+
+.montserrat {
+  font-family: 'montserrat';
+}
+
+@font-face {
+  font-family: 'ubuntu-mono';
+  src: url('/fonts/ubuntu-mono.ttf');
+}
+
+.ubuntu-mono {
+  font-family: 'font-mono', 'ubuntu-mono';
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.imessage {
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 1rem; /**/
+  max-width: 600px;
+}
+
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 1.25rem 0.75rem 0.875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: '';
+  height: 1rem;
+  position: absolute;
+}
+
+p.from-me {
+  align-self: flex-end;
+  background-color: #2f64eb;
+  color: #fff;
+}
+
+p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #2f64eb;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^='from-'] {
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+
+p.from-them {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+}
+
+p.from-them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-them::after {
+  background-color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^='from-'].emoji {
+  background: none;
+}
+
+p[class^='from-'].emoji::before {
+  content: none;
+}
+
+.no-tail::before {
+  display: none;
+}
+
+.margin-b_none {
+  margin-bottom: 0 !important;
+}
+
+.margin-b_one {
+  margin-bottom: 1rem !important;
+}
+
+.margin-t_one {
+  margin-top: 1rem !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  p.from-me::after {
+    background-color: #18181c;
+  }
+  p.from-them::after {
+    background-color: #18181c;
+  }
+
+  p.from-me {
+    color: #bbb;
+  }
+
+  p.from-them {
+    background-color: #1d293a;
+    color: #bbb;
+  }
+
+  p.from-them:before {
+    border-left: 1rem solid #1d293a;
+  }
+}
+
+.vh-10 {
+  height: 10vh;
+}
+.vh-20 {
+  height: 20vh;
+}
+.vh-30 {
+  height: 30vh;
+}
+.vh-40 {
+  height: 40vh;
+}
+.vh-50 {
+  height: 50vh;
+}
+
+.img-hor {
+  transform: rotateY(180deg);
+}
+
+.img-vert {
+  transform: rotateX(180deg);
+}
+
+.img-hor-vert {
+  transform: rotateX(180deg) rotateY(180deg);
+}

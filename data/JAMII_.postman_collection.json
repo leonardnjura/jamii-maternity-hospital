@@ -1,0 +1,1100 @@
+{
+  "info": {
+    "_postman_id": "1aa3c3d7-9c26-4430-b2b5-598bf57d23e4",
+    "name": "JAMII_MATERNITY_HOSPITAL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5379781",
+    "_collection_link": "https://blue-water-603223.postman.co/workspace/My-Workspace-1~2bf144e7-f41b-4477-97e6-8fa2d287dfbc/collection/5379781-1aa3c3d7-9c26-4430-b2b5-598bf57d23e4?action=share&source=collection_link&creator=5379781"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "ClientList",
+          "item": [
+            {
+              "name": "Transfer",
+              "item": [
+                {
+                  "name": "Transfer One Item from Midwife's ClientList",
+                  "request": {
+                    "auth": {
+                      "type": "noauth"
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"receivingMidwifeId\" : \"HqAKjmcslER0eQGmP7sb\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{url}}/api/users/Djy4dVggihWkzaEMTY9g/clientlist/F7g3EoLlSbDV0jvcLYvH/transfer",
+                      "host": ["{{url}}"],
+                      "path": [
+                        "api",
+                        "users",
+                        "Djy4dVggihWkzaEMTY9g",
+                        "clientlist",
+                        "F7g3EoLlSbDV0jvcLYvH",
+                        "transfer"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Add To User ClientList",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    //clientId\r\n    \"assignmentRef\": \"MfiP1KZHzQxhAN4nAcwI\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{url}}/api/users/oSPARVJR8RYnvz1ns9Sd/clientlist",
+                  "host": ["{{url}}"],
+                  "path": ["api", "users", "oSPARVJR8RYnvz1ns9Sd", "clientlist"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update One Item from User ClientList",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n     \"disabled\": true\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{url}}/api/users/eA0we4sicId9LiNo5peM/clientlist/I5FJTYKFqIHnFN3jQ5GJ",
+                  "host": ["{{url}}"],
+                  "path": [
+                    "api",
+                    "users",
+                    "eA0we4sicId9LiNo5peM",
+                    "clientlist",
+                    "I5FJTYKFqIHnFN3jQ5GJ"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get One Item from User ClientList",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/users/Djy4dVggihWkzaEMTY9g/clientlist/uXEwjqcpIqCtVFb1BIDz",
+                  "host": ["{{url}}"],
+                  "path": [
+                    "api",
+                    "users",
+                    "Djy4dVggihWkzaEMTY9g",
+                    "clientlist",
+                    "uXEwjqcpIqCtVFb1BIDz"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete One Item from User ClientList",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/users/oSPARVJR8RYnvz1ns9Sd/clientlist/bjwnmpwvyYhs6uOTBvn2",
+                  "host": ["{{url}}"],
+                  "path": [
+                    "api",
+                    "users",
+                    "oSPARVJR8RYnvz1ns9Sd",
+                    "clientlist",
+                    "bjwnmpwvyYhs6uOTBvn2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Items from User ClientList",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/users/CXLpCvOYg1uDXiHhWIAH/clientlist",
+                  "host": ["{{url}}"],
+                  "path": ["api", "users", "CXLpCvOYg1uDXiHhWIAH", "clientlist"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Items from User ClientList Copy",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/users/Djy4dVggihWkzaEMTY9g/clientlist",
+                  "host": ["{{url}}"],
+                  "path": ["api", "users", "Djy4dVggihWkzaEMTY9g", "clientlist"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"user@example.com\",\r\n    \"password\": \"User*$1234\",\r\n    \"firstName\": \"User\",\r\n    \"lastName\": \"X\",\r\n    // \"roleId\": \"2\", //midwife\r\n    \"avatar\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/signup?skipKlaims=false&skipFirebaseAuth=false",
+              "host": ["{{url}}"],
+              "path": ["api", "signup"],
+              "query": [
+                {
+                  "key": "skipKlaims",
+                  "value": "false"
+                },
+                {
+                  "key": "skipFirebaseAuth",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A/c Deletion",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\":\"user@example.com\"\r\n}\r\n\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/logdeletedprofile",
+              "host": ["{{url}}"],
+              "path": ["api", "logdeletedprofile"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Signin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"user@example.com\",\r\n    \"password\": \"User*$1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/signin",
+              "host": ["{{url}}"],
+              "path": ["api", "signin"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cookie",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"user@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/cookie",
+              "host": ["{{url}}"],
+              "path": ["api", "cookie"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Email Info",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"user@example.com\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/email",
+              "host": ["{{url}}"],
+              "path": ["api", "email"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get All Users",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/users",
+              "host": ["{{url}}"],
+              "path": ["api", "users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get All Users [with Assignments]",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/users?assignments=true&midwives=false",
+              "host": ["{{url}}"],
+              "path": ["api", "users"],
+              "query": [
+                {
+                  "key": "assignments",
+                  "value": "true"
+                },
+                {
+                  "key": "midwives",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get All Users [role Midwives]",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/users?midwives=true",
+              "host": ["{{url}}"],
+              "path": ["api", "users"],
+              "query": [
+                {
+                  "key": "midwives",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get One User",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/users/Djy4dVggihWkzaEMTY9g",
+              "host": ["{{url}}"],
+              "path": ["api", "users", "Djy4dVggihWkzaEMTY9g"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Update User",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roleId\": \"2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/users/XR4YeUqsqpIUwHkYxatM",
+              "host": ["{{url}}"],
+              "path": ["api", "users", "XR4YeUqsqpIUwHkYxatM"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "🫥 Update Field - Avatar (Base64)",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"file\": \"data:text/plain;base64,xxx\",\r\n    \"userId\": \"userId\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/updatefield_profileavatarbase64",
+              "host": ["{{url}}"],
+              "path": ["api", "updatefield_profileavatarbase64"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "🫥 Update Field - Avatar",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"avatar\": \"https://avatar.url\",\r\n    \"userId\": \"gMoQFAmEDhL6kbexAhCc\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/updatefield_profileavatar",
+              "host": ["{{url}}"],
+              "path": ["api", "updatefield_profileavatar"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Delete User",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/users/eA0we4sicId9LiNo5peM",
+              "host": ["{{url}}"],
+              "path": ["api", "users", "eA0we4sicId9LiNo5peM"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Logout",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/logout",
+              "host": ["{{url}}"],
+              "path": ["api", "logout"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hash",
+      "item": [
+        {
+          "name": "Generate Hash",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/hash?input=xxx",
+              "host": ["{{url}}"],
+              "path": ["api", "hash"],
+              "query": [
+                {
+                  "key": "input",
+                  "value": "xxx"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Validate Input Against Hash",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/hash/validate?input=xxx&hash=$2b$10$EkjIkxB4rctUorZ99a1Abe.JvO4D7tcRmr7gmci2w0BC4IXzxwS0K",
+              "host": ["{{url}}"],
+              "path": ["api", "hash", "validate"],
+              "query": [
+                {
+                  "key": "input",
+                  "value": "xxx"
+                },
+                {
+                  "key": "hash",
+                  "value": "$2b$10$EkjIkxB4rctUorZ99a1Abe.JvO4D7tcRmr7gmci2w0BC4IXzxwS0K"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hospital Client",
+      "item": [
+        {
+          "name": "✅ Create Hospital Client",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"clientEmail\" : \"mam.toto@musk.io\",\r\n    \"hospitalizationDays\": 60\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/clients",
+              "host": ["{{url}}"],
+              "path": ["api", "clients"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Update Hospital Client",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discharged\" : false,\r\n    \"handlerMedicId\": \"\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/clients/OHebl7K8OR3PH0thQCQz",
+              "host": ["{{url}}"],
+              "path": ["api", "clients", "OHebl7K8OR3PH0thQCQz"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Delete One Hospital Client",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/clients/gqOC0rRLtgGNRcMs9a9T",
+              "host": ["{{url}}"],
+              "path": ["api", "clients", "gqOC0rRLtgGNRcMs9a9T"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get All Hospital Clients (FB)",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/clients",
+              "host": ["{{url}}"],
+              "path": ["api", "clients"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get One Hospital Client",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/clients/xwGknwC0kGUHnpZ9sLnv",
+              "host": ["{{url}}"],
+              "path": ["api", "clients", "xwGknwC0kGUHnpZ9sLnv"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Surfer Messages",
+      "item": [
+        {
+          "name": "✅ Create Surfermessage",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\": \"Last\",\r\n    \"lastName\": \"Sicko\",\r\n    \"email\": \"last.sicko@gmail.com\",\r\n    \"surferMessage\": \"Healed, come for a treat nurse User...\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/surfermessages",
+              "host": ["{{url}}"],
+              "path": ["api", "surfermessages"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Update Surfermessage",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"surferMessage\": \"...Or not!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/surfermessages/OuYo7eIMWWkCJXow3Vhk",
+              "host": ["{{url}}"],
+              "path": ["api", "surfermessages", "OuYo7eIMWWkCJXow3Vhk"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "🫥 Update Field - Status",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"surferMessageId\": \"mSujyZGaLt5L6BtQ5p1z\",\r\n    \"status\": \"READ\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/updatefield_surfermessagestatus",
+              "host": ["{{url}}"],
+              "path": ["api", "updatefield_surfermessagestatus"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Delete One Surfermessage",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/surfermessages/OuYo7eIMWWkCJXow3Vhk",
+              "host": ["{{url}}"],
+              "path": ["api", "surfermessages", "OuYo7eIMWWkCJXow3Vhk"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get All Surfermessage (FB)",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/surfermessages",
+              "host": ["{{url}}"],
+              "path": ["api", "surfermessages"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "✅ Get One Surfermessage",
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "value",
+                  "value": "{{lno_api_key}}",
+                  "type": "string"
+                },
+                {
+                  "key": "key",
+                  "value": "crudkey",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/surfermessages/068yIYxFAayscn1ks9D4",
+              "host": ["{{url}}"],
+              "path": ["api", "surfermessages", "068yIYxFAayscn1ks9D4"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "Search",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"q\": \"term\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url}}/api/search",
+              "host": ["{{url}}"],
+              "path": ["api", "search"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Captcha",
+      "item": [
+        {
+          "name": "Verify Captcha",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/verifycaptcha?secret=xxx=&token=xxx=",
+              "host": ["{{url}}"],
+              "path": ["api", "verifycaptcha"],
+              "query": [
+                {
+                  "key": "secret",
+                  "value": "xxx="
+                },
+                {
+                  "key": "token",
+                  "value": "xxx="
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "https://malaica-project.vercel.app"
+    }
+  ]
+}
